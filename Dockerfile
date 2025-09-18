@@ -2,7 +2,7 @@
 FROM node:20-bullseye
 
 # Instala dependencias necesarias para n8n
-RUN apt-get update && apt-get install -y python3 make g++ git
+RUN apt-get update && apt-get install -y python3 make g++ git ca-certificates
 
 # Crea directorio de la app
 WORKDIR /app
